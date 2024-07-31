@@ -11,7 +11,7 @@ app.use(cors())
 // MongoDB
 mongoose.connect(process.env.MONGODB_URL)
     .then(() => console.log('MongoDB is Connected'))
-    .catch(() => console.log('MongoDB password is not Connected'))
+    .catch(() => console.log('MongoDB is not Connected'))
 
 // Endpoints
 app.use('/users', router)

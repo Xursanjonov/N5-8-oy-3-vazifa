@@ -17,23 +17,27 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    age: {
+        type: Number,
+        required: true
+    },
+    url: {
+        type: String,
+        required: false
+    },
     gander: {
         type: String,
         required: true
     },
-    budget: {
-        type: Number,
+    isActive: {
+        type: Boolean,
         required: true
     },
     email: {
         type: String,
         required: true
     },
-    url: {
-        type: String,
-        required: true
-    },
-    age: {
+    budget: {
         type: Number,
         required: true
     },
